@@ -1,0 +1,23 @@
+.Headings{
+    display: flex;
+    background-color: grey;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.HeadingQuantity{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* margin-right: 5rem;
+    margin-top: 2rem; */
+}
+.buttons{
+    height:2rem;
+    width:13rem;
+}
+.imageSource{
+    height:8rem;
+    width:13rem;
+}

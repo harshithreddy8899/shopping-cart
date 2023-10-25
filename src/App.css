@@ -1,0 +1,15 @@
+.Products {
+    display: grid;
+    flex:4;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+}
+.cartpage{
+    display: flex;
+    flex-direction: column;
+}
+
+.heading{
+    flex: 1;
+}

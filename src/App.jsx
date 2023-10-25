@@ -1,17 +1,36 @@
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import Product from './Product';
+import './App.css';
+import Heading from './Heading';
 
 const App = () => {
+  const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+  const [quanityImageArray, setQuanityImageArray] = useState(Array(12).fill([]));
+
+  const updateQuantityImageArray = (index, data) => {
+    setQuanityImageArray((prevArray) => {
+      const newArray = [...prevArray];
+      newArray[index] = data;
+      return newArray;
+    });
+  };
+
   return (
-    <div>
-      <h1>Hello from the main page of the app!</h1>
-      <p>Here are some examples of links to other pages</p>
-      <nav>
-        <ul>
-          <li>
-            <Link to="profile">Profile page</Link>
-          </li>
-        </ul>
-      </nav>
+    <div className='cartpage'>
+      <Heading quanityImageArray={quanityImageArray} className="heading" />
+      <div className='Products'>
+        {items.map((item, index) => (
+          <Product
+            key={index}
+            number={item}
+            quanityImageArray={quanityImageArray}
+            index={index}
+            updateQuantityImageArray={updateQuantityImageArray}
+          />
+        ))}
+      </div>
+          
+     
     </div>
   );
 };

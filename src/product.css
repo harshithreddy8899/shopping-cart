@@ -1,0 +1,42 @@
+.quantity{
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.productImage{
+    height: 20rem;
+    width: 30rem;
+}
+
+.buttonSize{
+    height: 3rem;
+    width: 6rem;
+    background-color: brown;
+    color: black;
+    border-radius: 1.5rem;
+    border: none;
+}
+
+.textBox{
+    height: 3rem;
+    width:  12rem;
+    text-align: center;
+    background-color: grey;
+    border: none;
+    border-radius: 1.5rem;
+}
+
+.product{
+    height: 30rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Price{
+    font-size: 2rem;
+}
