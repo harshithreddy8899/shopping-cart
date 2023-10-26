@@ -43,7 +43,7 @@ const Product = ({ number, quanityImageArray, index, updateQuantityImageArray })
       <div className="quantity">
         {console.log("hi")}
         <button onClick={handleClickMinus} className="buttonSize">-</button>
-        <input type="text" value={quantity} onChange={changeQuantity} className="textBox" />
+        <input type="text" value={quantity} onChange={changeQuantity} className="textBox1" />
         <button onClick={handleClickPlus} className="buttonSize">+</button>
       </div>
       <div className="Price">{price}</div>

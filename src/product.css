@@ -18,15 +18,17 @@
     color: black;
     border-radius: 1.5rem;
     border: none;
+    font-size: 2rem;
 }
 
-.textBox{
+.textBox1{
     height: 3rem;
     width:  12rem;
     text-align: center;
     background-color: grey;
     border: none;
     border-radius: 1.5rem;
+    font-size: 2rem;
 }
 
 .product{

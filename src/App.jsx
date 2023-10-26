@@ -3,17 +3,9 @@ import Product from './Product';
 import './App.css';
 import Heading from './Heading';
 
-const App = () => {
+const App = ({quanityImageArray,updateQuantityImageArray}) => {
   const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-  const [quanityImageArray, setQuanityImageArray] = useState(Array(12).fill([]));
-
-  const updateQuantityImageArray = (index, data) => {
-    setQuanityImageArray((prevArray) => {
-      const newArray = [...prevArray];
-      newArray[index] = data;
-      return newArray;
-    });
-  };
+  
 
   return (
     <div className='cartpage'>
